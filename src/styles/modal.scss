@@ -1,0 +1,29 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99500;
+  justify-content: center;
+  align-items: center;
+  &_window {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    .window {
+      width: 100%;
+    }
+    .window_content {
+      width: 100%;
+      background: #fff;
+      border-radius: 0 0 5px 5px;
+      color: #000;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

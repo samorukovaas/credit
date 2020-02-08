@@ -1,0 +1,120 @@
+@import "header";
+@import "promo";
+@import "fonts";
+@import "reasons";
+@import "features";
+@import "calculator";
+@import "step";
+@import "form";
+@import "conditions";
+@import "footer";
+@import "modal";
+@import '~reset.css';
+$body-color: slateblue;
+
+body {
+  color: $body-color;
+  font-family: 'Futura PT';
+  color: #333;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 34px;
+  line-height: 37px;
+  letter-spacing: -0.03em;
+  color: #333;
+  font-weight: 700;
+  @media (min-width: 600px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  @media (min-width: 600px) {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #333;
+  @media (min-width: 600px) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    color: #333;
+  }
+}
+.button {
+  background: #fe0;
+  border: none;
+  padding: 17px 0;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Futura PT';
+  outline: none;
+  cursor: pointer;
+  &-big {
+    width: 100%;
+    @media (min-width: 600px) {
+      width: auto;
+      display: table;
+      height: 60px;
+      padding: 0 53px;
+    }
+  }
+  &-form {
+    font-weight: 700;
+    padding: 18px 55px;
+    margin: 20px 0 70px;
+    display: flex;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    &-back {
+      margin: 20px auto 70px;
+    }
+    &-center {
+      margin: 0 auto;
+      @media (min-width: 600px) {
+        margin: 0 0px 0px auto;
+      }
+    }
+  }
+  &-submit {
+    padding: 18px 9px;
+  }
+  &-back {
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2f80ed;
+    display: flex;
+    align-items: baseline;
+    &-text {
+      margin-left: 5px;
+    }
+  }
+}
