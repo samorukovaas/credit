@@ -61,6 +61,9 @@
   }
 .credit__questions {
   display: none;
+  @media (max-width: 600px) {
+    display: block;
+  }
   &-item {
     margin-bottom: 25px;
     cursor: pointer;
