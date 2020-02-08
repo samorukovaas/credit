@@ -1,0 +1,21 @@
+.credit__features {
+  @media (min-width: 600px) {
+    max-width: 1040px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  &-text {
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin-top: 50px;
+    font-weight: 700;
+    @media (min-width: 600px) {
+      font-size: 31px;
+      line-height: 33px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.credit__promo {
+  box-sizing: border-box;
+  background-color: #fcfdfe;
+  width: 100%;
+  height: 430px;
+  background: url(/public/img/promo.png), linear-gradient(180deg, #fcfdfe 27.08%, #eff4f7 64.06%, #fff 99.48%);
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 70px;
+  z-index: -1;
+  background-position: -5px -60px;
+  @media (min-width: 600px) {
+    background: linear-gradient(180deg, #fcfdfe 38.35%, #e8edf0 72.99%, #f3f3f3 100%);
+    height: 600px;
+    padding-top: 130px;
+  }
+  &-image {
+    display: none;
+    @media (min-width: 600px) {
+      margin-top: -130px;
+      display: block;
+      margin-bottom: 60px;
+    }
+  }
+  .content-size {
+    max-width: 800px;
+  }
+}
